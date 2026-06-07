@@ -135,6 +135,7 @@
     <ClCompile Include="CourseTest.cpp" />
     <ClCompile Include="CreateCircle.cpp" />
     <ClCompile Include="CreateRect.cpp" />
+    <ClCompile Include="Entity_Object.cpp" />
     <ClCompile Include="GameCircleObj.cpp" />
     <ClCompile Include="GameRectObj.cpp" />
     <ClCompile Include="SampleGame.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="CourseTest.h" />
     <ClInclude Include="CreateCircle.h" />
     <ClInclude Include="CreateRect.h" />
+    <ClInclude Include="Entity_Object.h" />
     <ClInclude Include="GameCircleObj.h" />
     <ClInclude Include="GameRectObj.h" />
     <ClInclude Include="ShapeObject.h" />

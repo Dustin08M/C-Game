@@ -9,6 +9,7 @@
 //#include "CreateRect.h"
 //#include "CreateCircle.h"
 
+#include "Entity_Object.h"
 #include "GameRectObj.h"
 #include "GameCircleObj.h"
 //=======================================
@@ -84,6 +85,7 @@ int main()
 	//declaration of circle properties using CreateCircle class
 	//CreateCircle circle1(50, 600, 400, sf::Color::Green); //outdated
     GameCircleObj obj2(400, 200, 250, sf::Color::Red);
+    Entity_Object obj3(Rectangle, 50, 50, 100, sf::Color::White);
     while (window.isOpen()) // updates every frame
     {
         while (const std::optional event = window.pollEvent())

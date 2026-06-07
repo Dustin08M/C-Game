@@ -18,7 +18,7 @@ public:
 
 	}
 
-	int getAvg() const
+	float getAvg() const
 	{
 		return m_avg;
 	}
