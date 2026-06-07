@@ -5,7 +5,7 @@ Entity_Object::Entity_Object(ShapeType type, float xPos, float yPos, float size,
 	if (type == ShapeType::Rectangle)
 	{
 		auto rect = std::make_unique<sf::RectangleShape>(sf::Vector2f(size, size));
-		rect->setPosition(sf::Vector2f(size, size));
+		rect->setPosition(sf::Vector2f(xPos, yPos));
 		rect->setFillColor(color);
 		shape = std::move(rect);
 	}
@@ -19,4 +19,5 @@ Entity_Object::Entity_Object(ShapeType type, float xPos, float yPos, float size,
 		shape = std::move(circle);
 	}
 }
+
 void Entity_Object::draw(sf::RenderWindow & window) { window.draw(*shape); }

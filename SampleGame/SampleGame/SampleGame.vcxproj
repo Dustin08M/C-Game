@@ -138,6 +138,7 @@
     <ClCompile Include="Entity_Object.cpp" />
     <ClCompile Include="GameCircleObj.cpp" />
     <ClCompile Include="GameRectObj.cpp" />
+    <ClCompile Include="ObjFile.cpp" />
     <ClCompile Include="SampleGame.cpp" />
     <ClCompile Include="ShapeObject.cpp" />
     <ClCompile Include="Student.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Entity_Object.h" />
     <ClInclude Include="GameCircleObj.h" />
     <ClInclude Include="GameRectObj.h" />
+    <ClInclude Include="ObjFile.h" />
     <ClInclude Include="ShapeObject.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
