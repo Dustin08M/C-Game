@@ -1,5 +1,5 @@
-//Shape type	//xPos	//yPos	//size	//r	//g	//b
-Rectangle	50	50	25	0	255	255
-rectangle	100	100	80	255	250	250
-Circle		300	150	25	200	50	180
-circle		600	25	35	255	255	0
+//Shape type	//xPos	//yPos	//size	//speedX   //speedY	//r	//g	//b
+Rectangle	50	50	25	0.05		0	0	255	255
+rectangle	100	100	80	0.08		0.03	255	250	250
+Circle		300	150	25	0		0.5	200	50	180
+circle		600	25	35	0.03		0.8	255	255	0

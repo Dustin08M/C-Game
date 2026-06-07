@@ -142,6 +142,7 @@
     <ClCompile Include="SampleGame.cpp" />
     <ClCompile Include="ShapeObject.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CourseTest.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="ObjFile.h" />
     <ClInclude Include="ShapeObject.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

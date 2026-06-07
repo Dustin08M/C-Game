@@ -1,6 +1,6 @@
 #include "Entity_Object.h"
 
-Entity_Object::Entity_Object(ShapeType type, float xPos, float yPos, float size, sf::Color color)
+Entity_Object::Entity_Object(ShapeType type, float xPos, float yPos, float size,float speedX, float speedY, sf::Color color)
 {
 	if (type == ShapeType::Rectangle)
 	{

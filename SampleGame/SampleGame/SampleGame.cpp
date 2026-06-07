@@ -13,6 +13,7 @@
 #include "GameRectObj.h"
 #include "GameCircleObj.h"
 #include "ObjFile.h"
+#include "Vec2.h"
 //=======================================
 //For testing c++
 #include "CourseTest.h"
@@ -20,16 +21,20 @@
 
 int main()
 {
-    //CourseTest c("Comp2300");
-    //c.loadFromFile("Students.txt");
-    //c.print();
-    //ObjFile file;
-    //file.LoadFile("ObjectConfig.txt");
 
+    Vec2 v1(5, 13);
+    Vec2 v2(9, 16);
+    Vec2 v3(v1 + v2);
+    //std::cout << v3.x << " " << v3.y << std::endl;
+    float dist = v1.dist(v2);
+    std::cout << "distance is " << dist << std::endl;
     //Setting up window borders first
     const int wWidth = 800;
 	const int wHeight = 600;
     sf::RenderWindow window(sf::VideoMode({ wWidth, wHeight }), "Testing Obj Graphics");
+
+    ObjFile file;
+    file.LoadFile("ObjectConfig.txt");
 
     //Font
     sf::Font font;
@@ -59,7 +64,8 @@ int main()
         while (const std::optional event = window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
-                window.close();
+                exit(EXIT_SUCCESS);
+                //window.close();
                 
             else if (const auto* keyPressed = event ->getIf<sf::Event::KeyPressed>())
             {
@@ -68,6 +74,7 @@ int main()
         }
 
         window.clear();
+        file.DrawAll(window);
         obj1.draw(window);
         obj2.draw(window);
         window.display();

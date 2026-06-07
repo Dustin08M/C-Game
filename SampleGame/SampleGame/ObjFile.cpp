@@ -13,6 +13,8 @@ void ObjFile::LoadFile(const std::string filename)
 	ShapeType type;
 	float xPos, yPos;
 	float size;
+	float speedX;
+	float speedY;
 	int r, g, b;
 	while (fin >> shapeName)
 	{
@@ -23,8 +25,8 @@ void ObjFile::LoadFile(const std::string filename)
 		else
 			continue;
 
-		fin >> xPos >> yPos >> size >> r >> g >> b;
-		entObj.emplace_back(type, xPos, yPos, size, sf::Color(r, g, b));
+		fin >> xPos >> yPos >> size >> speedX >> speedY >> r >> g >> b;
+		entObj.emplace_back(type, xPos, yPos, size, speedX, speedY, sf::Color(r, g, b));
 	}
 }
 void ObjFile::DrawAll(sf::RenderWindow& window)
